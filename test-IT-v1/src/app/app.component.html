@@ -1,0 +1,39 @@
+<div>
+  <!-- As a link -->
+ <app-navbar [value]="title"></app-navbar>
+
+  <hr/>
+  <app-cart-bar [qty]="cartQty"></app-cart-bar>
+
+  &nbsp;
+  <hr/>
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link " href="/">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " routerLink="/items">items</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " routerLink="/cart">cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " routerLink="/orders">orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " routerLink="/login">sign-in</a>
+      </li>
+    </ul>
+  </div>
+  <hr />
+  <!-- <app-cart [value]="item" [count]="count"></app-cart> -->
+  <!-- <app-cart [cart]=cart></app-cart> -->
+  <!-- <app-cart [value]="qty" [id]="id_y" [cart]=cart></app-cart> -->
+
+
+
+
+  <div class="container">
+    <router-outlet></router-outlet>
+</div>
